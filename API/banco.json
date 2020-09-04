@@ -1,0 +1,17 @@
+{
+  "cadastro": [
+    {
+      "id": 1,
+      "Nome": "Bruno",
+      "Sobrenome": "Pinheiro",
+      "CPF": "333444555666",
+      "DataNascimento": "15/01/2021",
+      "CEP": "000111222",
+      "Endereco": "Rua A",
+      "Numero": "600",
+      "Complemento": "Bloco 1",
+      "Cidade": "São Paulo",
+      "Estado": "SP"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<main role="main" class="container">
+    <div class="jumbotron">
+      <h1>Cadastro</h1>
+      <form class="form-label-group" method="POST" #frm="ngForm" (ngSubmit)="saveCad()" [formGroup]="form">
+        <div class="form-group" [formGroup]="form">
+          <input class="form-control" type="text" placeholder="Id" formControlName="Id">
+        </div>
+        <div class="form-group" [formGroup]="form">
+          <input class="form-control" type="text" placeholder="Nome"  formControlName="Nome">
+        </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Sobrenome" formControlName="Sobrenome">
+        </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" placeholder="CPF" formControlName="CPF">
+        </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Data de Nascimento" formControlName="DataNascimento">
+        </div>
+        <div class="form-group" [formGroup]="form">
+            <input class="form-control" type="text" placeholder="CEP" formControlName="CEP">
+          </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Endereço" formControlName="Endereco">
+      </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Número" formControlName="Numero">
+      </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Complemento" formControlName="Complemento">
+      </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Cidade" formControlName="Cidade">
+      </div>
+        <div class="form-group" [formGroup]="form">
+        <input class="form-control" type="text" placeholder="Estado" formControlName="Estado">
+      </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cadastrar</button>        
+      </form>
+    </div>
+  </main>

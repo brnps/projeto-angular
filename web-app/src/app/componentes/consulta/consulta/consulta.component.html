@@ -1,0 +1,28 @@
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>Consulta</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome Completo</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Data de Nascimento</th>
+        <th scope="col">Endereço Completo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cad of cads">
+        <td>{{cad.id}}</td>
+        <td>{{cad.Nome}} {{cad.Sobrenome}}</td>
+        <td>{{cad.CPF}}</td>
+        <td>{{cad.DataNascimento}}</td>
+        <td>{{cad.Endereco}} , {{cad.Numero}} - {{cad.CEP}} - {{cad.Cidade}} - {{cad.Estado}}</td>
+        <td>
+          <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteCad(cad)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  </main>
