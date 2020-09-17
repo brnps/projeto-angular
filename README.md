@@ -8,6 +8,6 @@
 
 # <b>Ferramentas utilizadas: </b>
 
-- Angular 8+
+- Angular 10
 - JSON Server (API)
 
